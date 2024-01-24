@@ -3,3 +3,122 @@
 @use 'globals/reset';
 @use 'globals/typography';
 
+header{
+    padding: 2.5rem 3.5rem;
+
+    .navbar-container{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .logo{
+            a{
+                color: $white-color;
+                font-size: 2.25rem;
+                font-weight: 700;
+                letter-spacing: 0.0675rem;
+            }
+        }
+
+        .nav-links{
+            .links{
+                text-align: center;
+                font-family: $inter-font;
+                font-size: 1.125rem;
+                font-weight: 600;
+                margin-left: 1.5rem;
+                background-image: linear-gradient(to right, $main-blue, $main-blue 50%,$white-color 50%);
+                background-size: 200% 100%;
+                background-position: -100%;
+                // display: inline-block;
+                padding: 5px 0;
+                position: relative;
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                transition: all 0.3s ease-in-out;
+              
+                &:before {
+                  content: '';
+                  background: $main-blue;
+                  display: block;
+                  position: absolute;
+                  bottom: -4px;
+                  left: 0;
+                  width: 0;
+                  height: 3px;
+                  transition: all 0.3s ease-in-out;
+                }
+              
+                &:hover {
+                  background-position: 0;
+                }
+              
+                &:hover::before {
+                  width: 100%;
+                }
+            } 
+
+            .links4{
+                margin-right: 0;
+            }
+        }
+
+        .nav-btn{
+            button {
+                color: $white-color;
+                font-family: $inter-font;
+                font-size: 1.125rem;
+                font-weight: 700;
+                letter-spacing: 0.03375rem;
+                background-color: #242424;
+                padding: 0.675rem 1.8rem;
+                border: none;
+                border-radius: 0.625rem;
+                position: relative;
+                cursor: pointer;
+                overflow: hidden;
+              
+                span:not(:nth-child(6)) {
+                  position: absolute;
+                  left: 50%;
+                  top: 50%;
+                  transform: translate(-50%, -50%);
+                  height: 30px;
+                  width: 30px;
+                  background-color: $main-blue;
+                  border-radius: 50%;
+                  transition: .6s ease;
+                }
+              
+                span:nth-child(6) {
+                  position: relative;
+                }
+              
+                span:nth-child(1) {
+                  transform: translate(-3.3em, -4em);
+                }
+              
+                span:nth-child(2) {
+                  transform: translate(-6em, 1.3em);
+                }
+              
+                span:nth-child(3) {
+                  transform: translate(-.2em, 1.8em);
+                }
+              
+                span:nth-child(4) {
+                  transform: translate(3.5em, 1.4em);
+                }
+              
+                span:nth-child(5) {
+                  transform: translate(3.5em, -3.8em);
+                }
+              
+                &:hover span:not(:nth-child(6)) {
+                  transform: translate(-50%, -50%) scale(4);
+                  transition: 1.5s ease;
+                }
+            }  
+        }
+    }
+}
