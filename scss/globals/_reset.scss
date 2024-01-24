@@ -1,0 +1,15 @@
+html{
+    box-sizing: border-box;
+}
+
+body{
+    overflow: hidden;
+}
+
+*,
+::before,
+::after{
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
