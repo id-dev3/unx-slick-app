@@ -4,7 +4,12 @@ html{
 
 body{
     overflow: hidden;
-    background-color: #000000;
+    // background-color: #101010;
+    min-height: 100vh;
+    // background: url(/images/Ellipse\ 2.png);
+    background: 
+        url('/images/Ellipse-2.png') left top / cover no-repeat,
+        linear-gradient(to right, #101010, #101010);
     color: #fff;
 }
 

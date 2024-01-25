@@ -3,7 +3,20 @@
 @use 'globals/reset';
 @use 'globals/typography';
 
+// .ellipse{
+//   z-index: 0;
+//   width: 26.3125rem;
+//   height: 26.9375rem;
+//   flex-shrink: 0;
+//   border-radius: 26.9375rem;
+//   background: #3747D7;
+//   filter: blur(312px);
+//   position: absolute;
+//   left: 0;
+// }
+
 header{
+    // z-index: 5;
     padding: 2.5rem 3.5rem;
 
     .navbar-container{
@@ -26,7 +39,7 @@ header{
                 font-family: $inter-font;
                 font-size: 1.125rem;
                 font-weight: 600;
-                margin-left: 1.5rem;
+                margin-right: 2rem;
                 background-image: linear-gradient(to right, $main-blue, $main-blue 50%,$white-color 50%);
                 background-size: 200% 100%;
                 background-position: -100%;
