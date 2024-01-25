@@ -1,1 +1,7 @@
 @use 'variables' as *;
+
+@mixin flex-setup{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
