@@ -28,6 +28,9 @@ if (!motionMatchMedia.matches) {
 /// END 3D EFFECT ///
 
 
+
+/// HAMBURGER MENU ///
+
 document.addEventListener("DOMContentLoaded", function () {
   const hamburgerCheckbox = document.querySelector(".hamburger input");
   const navLinks = document.querySelector(".nav-links");
@@ -44,3 +47,16 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
 });
+
+/// HAMBURGER MENU ///
+
+
+
+/// BUTTON ANIMATION ON MOBILE PHONE ///
+
+document.querySelector('.button').addEventListener('click', function() {
+  // Add your animation logic here
+  this.classList.add('clicked');
+});
+
+/// END BUTTON ANIMATION ON MOBILE PHONE ///
