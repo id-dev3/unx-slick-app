@@ -5,3 +5,9 @@
     align-items: center;
     justify-content: center;
 }
+
+@mixin mobile-view{
+    @media only screen and (max-width: 600px){
+      @content;
+    }
+}
